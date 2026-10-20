@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="Nikhil Kushwaha — Computer Science and Data Science student building backend systems, AI applications, and data tools.">
+  <title>Nikhil Kushwaha | Software & AI Projects</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Nikhil Kushwaha home"><span class="mark">NK</span><span>Nikhil Kushwaha</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a class="nav-contact" href="mailto:nikhilkushwaha6027@gmail.com">Contact <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> COMPUTER SCIENCE · DATA SCIENCE · CLASS OF 2027</p>
+        <h1>I like turning<br><span class="gradient-text">hard problems</span><br>into useful software.</h1>
+        <p class="hero-description">I’m Nikhil, a CSE (Data Science) student who builds backend systems, AI-powered applications, and data tools. I care about making projects understandable, testable, and useful beyond a demo.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↓</span></a>
+          <a class="button button-quiet" href="mailto:nikhilkushwaha6027@gmail.com">Get in touch <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-links">
+          <a href="https://github.com/nikhil-247" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+          <a href="https://www.linkedin.com/in/nikhil-kushwaha-265880273" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
+          <a href="https://leetcode.com/u/nikhil_283/" target="_blank" rel="noreferrer">LeetCode <span>↗</span></a>
+        </div>
+      </div>
+      <div class="hero-panel" aria-label="Technical focus">
+        <div class="panel-top"><span>BUILD LOG</span><span class="panel-pulse">● ACTIVE LEARNING</span></div>
+        <div class="terminal-line"><span class="line-number">01</span><span class="terminal-key">focus</span><span class="terminal-value">backend systems</span></div>
+        <div class="terminal-line"><span class="line-number">02</span><span class="terminal-key">building</span><span class="terminal-value">AI & data tools</span></div>
+        <div class="terminal-line"><span class="line-number">03</span><span class="terminal-key">approach</span><span class="terminal-value">test, measure, explain</span></div>
+        <div class="code-art" aria-hidden="true">
+          <span class="code-orb orb-one"></span><span class="code-orb orb-two"></span>
+          <div class="code-window">
+            <div class="window-dots"><i></i><i></i><i></i><span>problem.py</span></div>
+            <pre><span class="code-purple">def</span> <span class="code-blue">solve</span>(problem):
+    context = <span class="code-yellow">understand</span>(problem)
+    solution = <span class="code-blue">build</span>(context)
+    <span class="code-purple">return</span> <span class="code-green">test</span>(solution)</pre>
+          </div>
+        </div>
+        <div class="panel-bottom"><span>Curiosity → Iteration → Improvement</span><span>✳</span></div>
+      </div>
+    </section>
+
+    <section class="signal-strip" aria-label="Highlights">
+      <div><strong>SIH 2025</strong><span>Finalist</span></div>
+      <div><strong>Vyom 2025</strong><span>AI Agent Showcase Winner</span></div>
+      <div><strong>Hakatron 3.0</strong><span>National Hackathon Winner</span></div>
+      <div><strong>Google Student Ambassador</strong><span>Gemini AI Initiative · Top 250 in India</span></div>
+    </section>
+
+    <section class="section work-section" id="work">
+      <div class="section-heading">
+        <div><p class="eyebrow">SELECTED WORK</p><h2>Projects with a purpose.</h2></div>
+        <p class="section-description">A few systems I’ve worked on, from model evaluation to APIs and operational dashboards. Project status is stated honestly so you can tell what is implemented and what still needs work.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button class="filter active" type="button" data-filter="all" aria-pressed="true">All projects</button>
+        <button class="filter" type="button" data-filter="backend" aria-pressed="false">Backend</button>
+        <button class="filter" type="button" data-filter="ai" aria-pressed="false">AI / ML</button>
+        <button class="filter" type="button" data-filter="data" aria-pressed="false">Data</button>
+      </div>
+      <div class="project-grid" id="project-grid">
+        <article class="project-card featured" data-categories="backend ai">
+          <div class="project-top"><span class="project-index">01 / MODEL EVALUATION</span><span class="project-icon icon-shield" aria-hidden="true">⌁</span></div>
+          <h3>Tarang</h3>
+          <p class="project-subtitle">Network Threat Detection</p>
+          <p class="project-description">A hybrid Isolation Forest + Random Forest pipeline evaluated on the public NSL-KDD benchmark, with a FastAPI endpoint, automated tests, and a reproducible evaluation workflow.</p>
+          <div class="metric-pair"><div><strong>96.88%</strong><span>precision</span></div><div><strong>60.50%</strong><span>recall</span></div></div>
+          <p class="caveat">Benchmark results, not production detection performance.</p>
+          <div class="tags"><span>Python</span><span>Scikit-learn</span><span>FastAPI</span><span>CI</span></div>
+          <a class="project-link" href="https://github.com/nikhil-247/Tarang" target="_blank" rel="noreferrer">Explore repository <span>↗</span></a>
+        </article>
+
+        <article class="project-card" data-categories="backend">
+          <div class="project-top"><span class="project-index">02 / FULL STACK</span><span class="project-icon icon-pdf" aria-hidden="true">▤</span></div>
+          <h3>CertFlow</h3>
+          <p class="project-subtitle">Bulk Certificate Generator</p>
+          <p class="project-description">A bulk job workflow that validates recipients, generates PDFs in the background, tracks each recipient independently, and supports individual or ZIP downloads.</p>
+          <div class="mini-callout"><span class="callout-dot"></span>Includes API tests and CI build checks</div>
+          <div class="tags"><span>FastAPI</span><span>React</span><span>TypeScript</span><span>SQLAlchemy</span><span>Docker</span></div>
+          <a class="project-link" href="https://github.com/nikhil-247/Bulk-Certificate-Generator-" target="_blank" rel="noreferrer">Explore repository <span>↗</span></a>
+        </article>
+
+        <article class="project-card" data-categories="backend">
+          <div class="project-top"><span class="project-index">03 / OPERATIONS</span><span class="project-icon icon-pulse" aria-hidden="true">⌁</span></div>
+          <h3>SimhaGuard 360</h3>
+          <p class="project-subtitle">Crowd-Safety Operations Prototype</p>
+          <p class="project-description">A dashboard prototype for crowd-zone status, incident lifecycle, RFID distress workflows, audit events, and transparent rule-based risk signals.</p>
+          <div class="mini-callout"><span class="callout-dot amber"></span>Prototype · some integrations are simulated</div>
+          <div class="tags"><span>React</span><span>TypeScript</span><span>Supabase</span><span>PostgreSQL</span></div>
+          <a class="project-link" href="https://github.com/nikhil-247/SimhaGuard-360" target="_blank" rel="noreferrer">Explore repository <span>↗</span></a>
+        </article>
+
+        <article class="project-card" data-categories="ai">
+          <div class="project-top"><span class="project-index">04 / LLM APPLICATION</span><span class="project-icon icon-spark" aria-hidden="true">✳</span></div>
+          <h3>Self Love</h3>
+          <p class="project-subtitle">AI Wellness Companion</p>
+          <p class="project-description">A team-built, voice-enabled wellness companion using a React frontend, Flask API, and OpenRouter-hosted language model for conversational support and mood-based features.</p>
+          <div class="mini-callout"><span class="callout-dot"></span>Vyom 2025 AI Agent Showcase Winner</div>
+          <div class="tags"><span>React</span><span>Python</span><span>Flask</span><span>LLM API</span></div>
+          <a class="project-link" href="https://github.com/nikhil-247/AI-Wellness-Assistant-project" target="_blank" rel="noreferrer">Explore repository <span>↗</span></a>
+        </article>
+
+        <article class="project-card" data-categories="ai data">
+          <div class="project-top"><span class="project-index">05 / DATA PRODUCT</span><span class="project-icon icon-chart" aria-hidden="true">⌁</span></div>
+          <h3>Finance Assistant</h3>
+          <p class="project-subtitle">Historical Market Analysis</p>
+          <p class="project-description">A small analysis app that fetches historical prices and calculates descriptive metrics through a Streamlit dashboard and FastAPI endpoint. It is not a trading or forecasting system.</p>
+          <div class="tags"><span>Python</span><span>pandas</span><span>FastAPI</span><span>Streamlit</span></div>
+          <a class="project-link" href="https://github.com/nikhil-247/Finance-assistant" target="_blank" rel="noreferrer">Explore repository <span>↗</span></a>
+        </article>
+
+        <article class="project-card" data-categories="data ai">
+          <div class="project-top"><span class="project-index">06 / BI DASHBOARD</span><span class="project-icon icon-chart" aria-hidden="true">▥</span></div>
+          <h3>Super Mart Sales Analysis</h3>
+          <p class="project-subtitle">Power BI Dashboard</p>
+          <p class="project-description">A Power BI report and supporting workbook for exploring sales data. Open the PBIX in Power BI Desktop to inspect the visuals and verify the report’s measures.</p>
+          <div class="tags"><span>Power BI</span><span>Excel</span><span>Visualization</span></div>
+          <a class="project-link" href="https://github.com/nikhil-247/Data-Analysis-for-Super-Mart-on-Power-BI" target="_blank" rel="noreferrer">Explore repository <span>↗</span></a>
+        </article>
+      </div>
+      <p class="empty-state" id="empty-state" hidden>No projects match this filter yet.</p>
+      <div class="more-work"><span>More code, notebooks, and experiments live on GitHub.</span><a href="https://github.com/nikhil-247?tab=repositories" target="_blank" rel="noreferrer">View all public repositories ↗</a></div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="section-heading">
+        <div><p class="eyebrow">A LITTLE ABOUT ME</p><h2>Technical curiosity,<br>with an eye on the user.</h2></div>
+        <div class="about-copy">
+          <p>I’m pursuing a B.Tech in Computer Science and Engineering (Data Science) at Rungta College of Engineering & Technology, Bhilai, graduating in 2027.</p>
+          <p>I enjoy breaking down ambiguous problems, building a working first version, and then improving reliability through testing and clear documentation. I’m especially interested in backend development, applied machine learning, and AI-powered software.</p>
+          <p>I also enjoy working with people. Startup operations at RuBI and running technical workshops as a Google Student Ambassador helped me practice communication, coordination, and explaining technical ideas clearly.</p>
+        </div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-group"><span class="skill-number">01</span><h3>Programming</h3><p>Python · Java · JavaScript · TypeScript · SQL · C</p></div>
+        <div class="skill-group"><span class="skill-number">02</span><h3>Backend & APIs</h3><p>FastAPI · Flask · REST APIs · PostgreSQL · MongoDB</p></div>
+        <div class="skill-group"><span class="skill-number">03</span><h3>AI & Data</h3><p>pandas · NumPy · scikit-learn · LLM APIs · Power BI</p></div>
+        <div class="skill-group"><span class="skill-number">04</span><h3>Engineering</h3><p>Git · Docker · GitHub Actions · pytest · automated testing</p></div>
+      </div>
+    </section>
+
+    <section class="section experience-section" id="experience">
+      <div class="section-heading">
+        <div><p class="eyebrow">EXPERIENCE & COMMUNITY</p><h2>What I’ve learned<br>outside the editor.</h2></div>
+        <p class="section-description">A few experiences that shaped how I collaborate, evaluate ideas, and take responsibility.</p>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item"><div class="timeline-date">FEB 2026 — APR 2026</div><div><h3>Process Executive (Data Intern)</h3><p class="timeline-org">Augtech NextWealth IT Pvt. Ltd.</p><p>Processed and quality-checked structured datasets supporting AI/ML workflows, with attention to validation, consistency, and reliable downstream data.</p></div></article>
+        <article class="timeline-item"><div class="timeline-date">JAN 2025 — JUN 2025</div><div><h3>Executive Coordinator</h3><p class="timeline-org">RuBI Business Incubator</p><p>Supported startup pitch evaluation and coordinated event operations, stakeholder communication, and on-ground execution for CHESS 2025.</p></div></article>
+        <article class="timeline-item"><div class="timeline-date">AUG 2025 — DEC 2025</div><div><h3>Google Student Ambassador</h3><p class="timeline-org">Gemini AI Initiative</p><p>Selected among the Top 250 ambassadors in India and conducted AI workshops and technical sessions for 400+ students.</p></div></article>
+        <article class="timeline-item"><div class="timeline-date">COMMUNITY</div><div><h3>Community Head</h3><p class="timeline-org">Code Hideout</p><p>Helped lead a technical community of 700+ members focused on coding, AI, DSA, and software development.</p></div></article>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div><p class="eyebrow">HAVE A PROBLEM WORTH SOLVING?</p><h2>Let’s build something<br><span class="gradient-text">useful.</span></h2></div>
+      <div class="contact-side"><p>I’m open to software engineering, backend, data, and applied AI opportunities where I can learn and contribute.</p><a class="button button-primary" href="mailto:nikhilkushwaha6027@gmail.com">Email me <span>↗</span></a><a class="contact-secondary" href="https://www.linkedin.com/in/nikhil-kushwaha-265880273" target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="wordmark" href="#top"><span class="mark">NK</span><span>Nikhil Kushwaha</span></a>
+    <span>Built with curiosity and care · <span id="year"></span></span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+</body>
+</html>
