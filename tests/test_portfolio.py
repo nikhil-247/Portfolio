@@ -53,10 +53,13 @@ class PortfolioTests(unittest.TestCase):
                 self.assertIn(ref, self.parser.ids)
 
     def test_featured_projects_have_public_repository_links(self) -> None:
-        self.assertEqual(self.parser.project_cards, 6)
+        self.assertEqual(self.parser.project_cards, 9)
         self.assertIn("CertFlow", self.parser.text)
         self.assertIn("Tarang", self.parser.text)
         self.assertIn("SimhaGuard 360", self.parser.text)
+        self.assertIn("Email Scheduler", self.parser.text)
+        self.assertIn("Build Security", self.parser.text)
+        self.assertIn("BLE Device Monitor", self.parser.text)
 
     def test_external_new_tab_links_use_rel_noreferrer(self) -> None:
         for link in self.parser.external_blank_links:
@@ -64,8 +67,11 @@ class PortfolioTests(unittest.TestCase):
                 rel = set(link.get("rel", "").split())
                 self.assertIn("noreferrer", rel)
 
-    def test_private_email_scheduler_is_not_linked(self) -> None:
-        self.assertNotIn("Email-Scheduler", self.html)
+    def test_major_engineering_projects_link_to_public_repositories(self) -> None:
+        urls = {link.get("href", "") for link in self.parser.external_blank_links}
+        self.assertIn("https://github.com/nikhil-247/Email-Scheduler", urls)
+        self.assertIn("https://github.com/nikhil-247/Build-security", urls)
+        self.assertIn("https://github.com/nikhil-247/BLE-Based-Device-Communication---Monitoring", urls)
 
 
 if __name__ == "__main__":
